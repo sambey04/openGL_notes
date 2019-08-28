@@ -1,1 +1,1 @@
- g++ file_name.cpp -o gl -lGL -lGLU -lglut
+ g++ main.cpp -o gl -lGL -lGLU -lglut
