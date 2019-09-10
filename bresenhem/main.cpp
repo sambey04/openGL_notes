@@ -74,10 +74,10 @@ glFlush();
 void display(void)
 {
  glClear(GL_COLOR_BUFFER_BIT);
- ddaLine(-70,-10,-50,90); //m > 1 steep,positive
+// ddaLine(-70,-10,-50,90); //m > 1 steep,positive
  ddaLine(-10,-70,90,-50); //m < 1 gentle positive
- ddaLine(-10,70,90,50);   //m > -1 gentle negative
- ddaLine(70,-10,50,90);   //m < -1 steep negative
+ //ddaLine(-10,70,90,50);   //m > -1 gentle negative
+ //ddaLine(70,-10,50,90);   //m < -1 steep negative
 }
 
 
