@@ -3,6 +3,7 @@
 #include<GL/glut.h>
 #include<iostream>
 #include<math.h>
+using namespace std;
 
 
 void init(void)
@@ -80,8 +81,9 @@ void myMouseFunc(int button, int state, int x, int y)
 {
 	if(button == GLUT_LEFT_BUTTON && state == GLUT_UP) {
 
-		
+cout << x << " " << y << "\n";		
 circleMidpoint(sqrt(x*x+y*y));
+
 }}
 
 

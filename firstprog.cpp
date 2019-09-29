@@ -32,7 +32,23 @@ glBegin(GL_LINES);
 glVertex2i(180,15);
 glVertex2i(10,145);
 glEnd();
+
+
+
 glFlush();
+
+
+
+}
+
+void output(int x, int y, int font, char *string)
+{
+  glColor3f( 1.0, 0, 0 );
+  glRasterPos2f(x, y);
+  int len, i;
+  len = (int)strlen(string);
+  for (i = 0; i < len; i++) {
+  }    glutBitmapCharacter(GLUT_BITMAP_8_BY_13, string);
 }
 
 
@@ -43,9 +59,11 @@ glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
 glutInitWindowPosition(50,100);
 glutInitWindowSize(400,300);
 glutCreateWindow("Sample programs");
-
+glutFullScreen();
 init();
-glutDisplayFunc(lineSegment);
+output(0.,0.,)
+//glutDisplayFunc(lineSegment);
+
 glutMainLoop();
 return 0;
 
